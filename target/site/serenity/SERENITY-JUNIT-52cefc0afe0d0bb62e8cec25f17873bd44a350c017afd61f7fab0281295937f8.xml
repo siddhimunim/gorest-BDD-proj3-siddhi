@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Testing User creation and verifying all data" skipped="0" tests="4" time="5.88" timestamp="2023-01-10T21:21:38.682Z[Europe/London]"><testcase name="Create a new user data"/><testcase name="Get User details"/><testcase name="Update  user details data"/><testcase name="Delete user details"/></testsuite>

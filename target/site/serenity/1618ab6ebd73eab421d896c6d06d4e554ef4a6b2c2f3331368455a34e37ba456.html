@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Data Driven test for creating multiple users</title>
+    <link rel="shortcut icon" href="favicon.ico">
+
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- JQuery-UI -->
+<link type="text/css" href="jqueryui/1.11.2-start/jquery-ui.min.css" rel="Stylesheet" />
+<script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.4/media/jqueryui/dataTables.jqueryui.css" rel="Stylesheet"/>
+<link type="text/css" href="css/tables.css" rel="stylesheet" />
+
+<script type="text/javascript" src="datatables/1.10.4/media/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.4/media/jqueryui/dataTables.jqueryui.min.js"></script><!-- ImgPreview -->
+<script src="scripts/imgpreview.full.jquery.js" type="text/javascript"></script>
+</head>
+
+<body class="results-page">
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+        <span class="breadcrumbs">
+            <a href="index.html" class="breadcrumbs">Home</a>
+
+            > Data Driven test for creating multiple users
+        </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 10-01-2023 19:51</span>
+    <br style="clear:left"/>
+</div>
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">User Data Driven Test</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-3x' title='FAILURE'></i></span>
+                            <span class="test-case-title">
+                                    <span class="failing-color">
+                                    Data Driven Test For Creating Multiple Users
+                                        <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3 class="story-header">Scenario Outline</h3>
+
+        <div class="scenario">Creating User with Name :&lt;NAME&gt;, email : &lt;EMAIL&gt;, gender : &lt;GENDER&gt; and status: &lt;STATUS&gt;</div>
+
+    </div>
+
+    <div id="beforetable"></div>
+
+
+        <h3 class="story-header">Examples:</h3>
+        <div class="example-table">
+            <table>
+                <thead>
+                <tr>
+                    <th>#</th>
+                        <th>NAME</th>
+                        <th>EMAIL</th>
+                        <th>GENDER</th>
+                        <th>STATUS</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="test-SUCCESS"><a href="#0">1</a></td>
+                            <td class="test-SUCCESS"><a href="#0">sam</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#0">sdbn@gmail.com</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#0">female</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#0">active</a>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="test-FAILURE"><a href="#1">2</a></td>
+                            <td class="test-FAILURE"><a href="#1">same</a>
+                            </td>
+                            <td class="test-FAILURE"><a href="#1">sdbn42656@gmail.com</a>
+                            </td>
+                            <td class="test-FAILURE"><a href="#1">male</a>
+                            </td>
+                            <td class="test-FAILURE"><a href="#1">nonactive</a>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="test-SUCCESS"><a href="#2">3</a></td>
+                            <td class="test-SUCCESS"><a href="#2">sam</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#2">sdbn43rt@gmail.com</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#2">female</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#2">active</a>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="test-SUCCESS"><a href="#3">4</a></td>
+                            <td class="test-SUCCESS"><a href="#3">samg</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#3">sdbn6tytr1@gmail.com</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#3">male</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#3">active</a>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="test-FAILURE"><a href="#4">5</a></td>
+                            <td class="test-FAILURE"><a href="#4">samh</a>
+                            </td>
+                            <td class="test-FAILURE"><a href="#4">sdbn46try@gmail.com</a>
+                            </td>
+                            <td class="test-FAILURE"><a href="#4">female</a>
+                            </td>
+                            <td class="test-FAILURE"><a href="#4">nonactive</a>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="test-SUCCESS"><a href="#5">6</a></td>
+                            <td class="test-SUCCESS"><a href="#5">sami</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#5">sdbn52try@gmail.com</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#5">male</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#5">active</a>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="test-SUCCESS"><a href="#6">7</a></td>
+                            <td class="test-SUCCESS"><a href="#6">samj</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#6">sdbn57try@gmail.com</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#6">female</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#6">active</a>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="test-SUCCESS"><a href="#7">8</a></td>
+                            <td class="test-SUCCESS"><a href="#7">samk</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#7">sdbn50try@gmail.com</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#7">female</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#7">active</a>
+                            </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    <div id="tablecontents">
+        <div>
+            <table class="step-table">
+                <tr class="step-titles">
+                    <th width="65">                        &nbsp;
+                    </th>
+
+                    <th width="%" class="step-description-wide-column greentext">
+                        Steps
+                    </th>
+                    <th width="100" class="greentext">Outcome</th>
+                    <th width="75" class="greentext">Duration</th>
+                </tr>
+                <tr class="step-table-separator">
+                    <td colspan="5"></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        <a name="0"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection0 success-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block;">
+                            <span class="top-level-step">Data Driven test for creating multiple users </span>
+                            </a>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">0.38s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection0" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Creating User with Name :sam, email : sdbn@gmail.com, gender : female and status: active</span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">0.38s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">POST https://gorest.co.in/public/v2/users</span>
+
+                                <span class="rest-query">
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
+                            data-target="#restModal-3">
+                        REST Query
+                    </button>
+                </span>
+                <!-- Modal -->
+                <div class="modal fade" id="restModal-3" tabindex="-1" role="dialog"
+                     aria-labelledby="restModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="restModalLabel">
+                                POST https://gorest.co.in/public/v2/users
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                    <p>Status code: 201</p>
+                                    <p>Content Type: application/json</p>
+                                    <h5>Request Headers</h5>
+                                    <pre>Authorization=Bearer 3fd5c5d69049fe0983c50eccc57a83d284bd9dbcff3d769acd739294f73b86bb<br>Connection=keep-alive<br>Accept=*/*<br>Content-Type=application/json; charset=UTF-8</pre>
+                                    <h5>Content Body</h5>
+                                    <pre>{<br>    &quot;name&quot;: &quot;sam&quot;,<br>    &quot;gender&quot;: &quot;female&quot;,<br>    &quot;email&quot;: &quot;sdbn@gmail.com&quot;,<br>    &quot;status&quot;: &quot;active&quot;<br>}</pre>
+                                    <h5>Request Cookies</h5>
+                                    <pre></pre>
+                                    <h5>Response Headers</h5>
+                                    <pre>Date: Tue, 10 Jan 2023 19:51:37 GMT<br>Content-Type: application/json; charset=utf-8<br>Transfer-Encoding: chunked<br>Connection: keep-alive<br>Cache-Control: max-age=0, private, must-revalidate<br>etag: W/&quot;9b605e701cda6a4597e278cb9d8f0407&quot;<br>location: https://gorest.co.in/public/v2/users/42231<br>referrer-policy: strict-origin-when-cross-origin<br>vary: Origin<br>x-content-type-options: nosniff<br>x-download-options: noopen<br>x-frame-options: SAMEORIGIN<br>x-permitted-cross-domain-policies: none<br>x-ratelimit-limit: 90<br>x-ratelimit-remaining: 86<br>x-ratelimit-reset: 4<br>x-request-id: e12d76eb-345b-4d23-82ff-aa8bd2e47379<br>x-runtime: 0.084969<br>x-xss-protection: 0<br>CF-Cache-Status: DYNAMIC<br>Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=ytYZBznMXk2aX%2FlNU63F5DwawlDuQvZr9BgNufUYa3RDcICqxGE0Y%2BZbEH106FUOf70CoCBAq%2F9foSEP5XoSdtidfczmL4GIspPx71lxTwpeG8BJC%2F03mbv4CwPOwro%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>Server: cloudflare<br>CF-RAY: 7877f2c87fd623fb-LHR<br>alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400</pre>
+                                <h5>Response Body</h5>
+                                    <pre>
+                                        {<br>    &quot;id&quot;: 42231,<br>    &quot;name&quot;: &quot;sam&quot;,<br>    &quot;email&quot;: &quot;sdbn@gmail.com&quot;,<br>    &quot;gender&quot;: &quot;female&quot;,<br>    &quot;status&quot;: &quot;active&quot;<br>}
+                                    </pre>
+                                    <h5>Response Cookies</h5>
+                                    <pre></pre>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                </span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-FAILURE">
+                    <td width="60" class="step-icon">
+                        <a name="1"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection1 failure-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block;">
+                            <span class="top-level-step">Data Driven test for creating multiple users </span>
+                            </a>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="top-level-step">FAILURE</span></td>
+                    <td width="100"><span class="top-level-step">0.38s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection1" style="display:none; width:100%">
+
+                <tr class="test-FAILURE">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Creating User with Name :same, email : sdbn42656@gmail.com, gender : male and status: nonactive</span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-step">FAILURE</span></td>
+                    <td width="100"><span class="nested-step">0.38s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">POST https://gorest.co.in/public/v2/users</span>
+
+                                <span class="rest-query">
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
+                            data-target="#restModal-6">
+                        REST Query
+                    </button>
+                </span>
+                <!-- Modal -->
+                <div class="modal fade" id="restModal-6" tabindex="-1" role="dialog"
+                     aria-labelledby="restModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="restModalLabel">
+                                POST https://gorest.co.in/public/v2/users
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                    <p>Status code: 422</p>
+                                    <p>Content Type: application/json</p>
+                                    <h5>Request Headers</h5>
+                                    <pre>Authorization=Bearer 3fd5c5d69049fe0983c50eccc57a83d284bd9dbcff3d769acd739294f73b86bb<br>Connection=keep-alive<br>Accept=*/*<br>Content-Type=application/json; charset=UTF-8</pre>
+                                    <h5>Content Body</h5>
+                                    <pre>{<br>    &quot;name&quot;: &quot;same&quot;,<br>    &quot;gender&quot;: &quot;male&quot;,<br>    &quot;email&quot;: &quot;sdbn42656@gmail.com&quot;,<br>    &quot;status&quot;: &quot;nonactive&quot;<br>}</pre>
+                                    <h5>Request Cookies</h5>
+                                    <pre></pre>
+                                    <h5>Response Headers</h5>
+                                    <pre>Date: Tue, 10 Jan 2023 19:51:37 GMT<br>Content-Type: application/json; charset=utf-8<br>Transfer-Encoding: chunked<br>Connection: keep-alive<br>Cache-Control: no-cache<br>referrer-policy: strict-origin-when-cross-origin<br>vary: Origin<br>x-content-type-options: nosniff<br>x-download-options: noopen<br>x-frame-options: SAMEORIGIN<br>x-permitted-cross-domain-policies: none<br>x-ratelimit-limit: 90<br>x-ratelimit-remaining: 85<br>x-ratelimit-reset: 4<br>x-request-id: bf9d4827-2f43-42af-b3c7-eafdf504352f<br>x-runtime: 0.072044<br>x-xss-protection: 0<br>CF-Cache-Status: DYNAMIC<br>Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=FgFvYV9EDiIEyq%2FHKd91W9AzugxyQGGjMuf%2Fkg3IfpnAeDmVbH%2FilPH3109ChuuKck%2FNmE5qf2l4tD7dIGe7FfgForZaoYyzlRFa80b6hOprfAJc98ujBIUyOkNVDVA%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>Server: cloudflare<br>CF-RAY: 7877f2caeffe7792-LHR<br>alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400</pre>
+                                <h5>Response Body</h5>
+                                    <pre>
+                                        [<br>    {<br>        &quot;field&quot;: &quot;status&quot;,<br>        &quot;message&quot;: &quot;can't be blank&quot;<br>    }<br>]
+                                    </pre>
+                                    <h5>Response Cookies</h5>
+                                    <pre></pre>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                </span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+                <tr class="test-FAILURE">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Failure</span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">FAILURE</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+                    <tr class="test-FAILURE">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="4" class="error-message-cell">
+                            <div class="error-message ellipsis"
+                                 title='Assertion error: 1 expectation failed.Expected status code &lt;201&gt; but was &lt;422&gt;.'>
+                                <pre>Assertion error: 1 expectation failed.Expected status code &lt;201&gt; but was &lt;422&gt;.</pre>
+                            </div>
+                <div><!-- Stack trace -->
+                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                            data-target="#stacktraceModal-7">
+                        View stack trace
+                    </button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="stacktraceModal-7" tabindex="-1" role="dialog"
+                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="stacktraceModalLabel">
+                                java.lang.AssertionError
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                    <h5>1 expectation failed.<br>Expected status code <201> but was <422>.<br></h5>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                        </td>
+                    </tr>
+
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        <a name="2"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection2 success-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
+                               style="display:block;">
+                            <span class="top-level-step">Data Driven test for creating multiple users </span>
+                            </a>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">0.76s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection2" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Creating User with Name :sam, email : sdbn43rt@gmail.com, gender : female and status: active</span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">0.76s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">POST https://gorest.co.in/public/v2/users</span>
+
+                                <span class="rest-query">
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
+                            data-target="#restModal-10">
+                        REST Query
+                    </button>
+                </span>
+                <!-- Modal -->
+                <div class="modal fade" id="restModal-10" tabindex="-1" role="dialog"
+                     aria-labelledby="restModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="restModalLabel">
+                                POST https://gorest.co.in/public/v2/users
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                    <p>Status code: 201</p>
+                                    <p>Content Type: application/json</p>
+                                    <h5>Request Headers</h5>
+                                    <pre>Authorization=Bearer 3fd5c5d69049fe0983c50eccc57a83d284bd9dbcff3d769acd739294f73b86bb<br>Connection=keep-alive<br>Accept=*/*<br>Content-Type=application/json; charset=UTF-8</pre>
+                                    <h5>Content Body</h5>
+                                    <pre>{<br>    &quot;name&quot;: &quot;sam&quot;,<br>    &quot;gender&quot;: &quot;female&quot;,<br>    &quot;email&quot;: &quot;sdbn43rt@gmail.com&quot;,<br>    &quot;status&quot;: &quot;active&quot;<br>}</pre>
+                                    <h5>Request Cookies</h5>
+                                    <pre></pre>
+                                    <h5>Response Headers</h5>
+                                    <pre>Date: Tue, 10 Jan 2023 19:51:38 GMT<br>Content-Type: application/json; charset=utf-8<br>Transfer-Encoding: chunked<br>Connection: keep-alive<br>Cache-Control: max-age=0, private, must-revalidate<br>etag: W/&quot;a3f248fcf4c0aae13cd45c6c02d6234c&quot;<br>location: https://gorest.co.in/public/v2/users/42232<br>referrer-policy: strict-origin-when-cross-origin<br>vary: Origin<br>x-content-type-options: nosniff<br>x-download-options: noopen<br>x-frame-options: SAMEORIGIN<br>x-permitted-cross-domain-policies: none<br>x-ratelimit-limit: 90<br>x-ratelimit-remaining: 84<br>x-ratelimit-reset: 4<br>x-request-id: 3d3bb1f3-ac79-4234-9183-e84a63808b93<br>x-runtime: 0.083554<br>x-xss-protection: 0<br>CF-Cache-Status: DYNAMIC<br>Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=a4YXw5GgrsXI7JbHZDSfWJG6dHvvHH8Mdt3vYTQ8Pm%2BboRx%2BtU6buYQ6KQN2on3q8XEpZv3%2FgCICqIRv6HGwvlHW0J91%2BXd3E%2B6WkpnFcpRgpa%2F9bRfYI7gwCXVE0UM%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>Server: cloudflare<br>CF-RAY: 7877f2cd5ddc71d4-LHR<br>alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400</pre>
+                                <h5>Response Body</h5>
+                                    <pre>
+                                        {<br>    &quot;id&quot;: 42232,<br>    &quot;name&quot;: &quot;sam&quot;,<br>    &quot;email&quot;: &quot;sdbn43rt@gmail.com&quot;,<br>    &quot;gender&quot;: &quot;female&quot;,<br>    &quot;status&quot;: &quot;active&quot;<br>}
+                                    </pre>
+                                    <h5>Response Cookies</h5>
+                                    <pre></pre>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                </span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        <a name="3"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection3')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection3 success-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection3')"
+                               style="display:block;">
+                            <span class="top-level-step">Data Driven test for creating multiple users </span>
+                            </a>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">0.77s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection3" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Creating User with Name :samg, email : sdbn6tytr1@gmail.com, gender : male and status: active</span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">0.77s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">POST https://gorest.co.in/public/v2/users</span>
+
+                                <span class="rest-query">
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
+                            data-target="#restModal-13">
+                        REST Query
+                    </button>
+                </span>
+                <!-- Modal -->
+                <div class="modal fade" id="restModal-13" tabindex="-1" role="dialog"
+                     aria-labelledby="restModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="restModalLabel">
+                                POST https://gorest.co.in/public/v2/users
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                    <p>Status code: 201</p>
+                                    <p>Content Type: application/json</p>
+                                    <h5>Request Headers</h5>
+                                    <pre>Authorization=Bearer 3fd5c5d69049fe0983c50eccc57a83d284bd9dbcff3d769acd739294f73b86bb<br>Connection=keep-alive<br>Accept=*/*<br>Content-Type=application/json; charset=UTF-8</pre>
+                                    <h5>Content Body</h5>
+                                    <pre>{<br>    &quot;name&quot;: &quot;samg&quot;,<br>    &quot;gender&quot;: &quot;male&quot;,<br>    &quot;email&quot;: &quot;sdbn6tytr1@gmail.com&quot;,<br>    &quot;status&quot;: &quot;active&quot;<br>}</pre>
+                                    <h5>Request Cookies</h5>
+                                    <pre></pre>
+                                    <h5>Response Headers</h5>
+                                    <pre>Date: Tue, 10 Jan 2023 19:51:39 GMT<br>Content-Type: application/json; charset=utf-8<br>Transfer-Encoding: chunked<br>Connection: keep-alive<br>Cache-Control: max-age=0, private, must-revalidate<br>etag: W/&quot;4dc8ceee2b477edf6b50ef70ede6b5d5&quot;<br>location: https://gorest.co.in/public/v2/users/42233<br>referrer-policy: strict-origin-when-cross-origin<br>vary: Origin<br>x-content-type-options: nosniff<br>x-download-options: noopen<br>x-frame-options: SAMEORIGIN<br>x-permitted-cross-domain-policies: none<br>x-ratelimit-limit: 90<br>x-ratelimit-remaining: 84<br>x-ratelimit-reset: 4<br>x-request-id: d609482b-7e2d-4353-85b5-a521e5089968<br>x-runtime: 0.092120<br>x-xss-protection: 0<br>CF-Cache-Status: DYNAMIC<br>Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=ciLXDnZo%2BemBzMzp%2Fmf3%2FGbnY6PlYdnH1gFmadZm%2BGnBVRBD%2BCpKhAa97sSr%2FRJpNpFBypHIjOK%2FP2imQgoh3HBff1cwawqj%2FpzamekiFlOOVeKgakA%2F%2B4ib1LJHb7g%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>Server: cloudflare<br>CF-RAY: 7877f2d22877885f-LHR<br>alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400</pre>
+                                <h5>Response Body</h5>
+                                    <pre>
+                                        {<br>    &quot;id&quot;: 42233,<br>    &quot;name&quot;: &quot;samg&quot;,<br>    &quot;email&quot;: &quot;sdbn6tytr1@gmail.com&quot;,<br>    &quot;gender&quot;: &quot;male&quot;,<br>    &quot;status&quot;: &quot;active&quot;<br>}
+                                    </pre>
+                                    <h5>Response Cookies</h5>
+                                    <pre></pre>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                </span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-FAILURE">
+                    <td width="60" class="step-icon">
+                        <a name="4"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection4')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection4 failure-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection4')"
+                               style="display:block;">
+                            <span class="top-level-step">Data Driven test for creating multiple users </span>
+                            </a>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="top-level-step">FAILURE</span></td>
+                    <td width="100"><span class="top-level-step">0.76s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection4" style="display:none; width:100%">
+
+                <tr class="test-FAILURE">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Creating User with Name :samh, email : sdbn46try@gmail.com, gender : female and status: nonactive</span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-step">FAILURE</span></td>
+                    <td width="100"><span class="nested-step">0.76s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">POST https://gorest.co.in/public/v2/users</span>
+
+                                <span class="rest-query">
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
+                            data-target="#restModal-16">
+                        REST Query
+                    </button>
+                </span>
+                <!-- Modal -->
+                <div class="modal fade" id="restModal-16" tabindex="-1" role="dialog"
+                     aria-labelledby="restModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="restModalLabel">
+                                POST https://gorest.co.in/public/v2/users
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                    <p>Status code: 422</p>
+                                    <p>Content Type: application/json</p>
+                                    <h5>Request Headers</h5>
+                                    <pre>Authorization=Bearer 3fd5c5d69049fe0983c50eccc57a83d284bd9dbcff3d769acd739294f73b86bb<br>Connection=keep-alive<br>Accept=*/*<br>Content-Type=application/json; charset=UTF-8</pre>
+                                    <h5>Content Body</h5>
+                                    <pre>{<br>    &quot;name&quot;: &quot;samh&quot;,<br>    &quot;gender&quot;: &quot;female&quot;,<br>    &quot;email&quot;: &quot;sdbn46try@gmail.com&quot;,<br>    &quot;status&quot;: &quot;nonactive&quot;<br>}</pre>
+                                    <h5>Request Cookies</h5>
+                                    <pre></pre>
+                                    <h5>Response Headers</h5>
+                                    <pre>Date: Tue, 10 Jan 2023 19:51:40 GMT<br>Content-Type: application/json; charset=utf-8<br>Transfer-Encoding: chunked<br>Connection: keep-alive<br>Cache-Control: no-cache<br>referrer-policy: strict-origin-when-cross-origin<br>vary: Origin<br>x-content-type-options: nosniff<br>x-download-options: noopen<br>x-frame-options: SAMEORIGIN<br>x-permitted-cross-domain-policies: none<br>x-ratelimit-limit: 90<br>x-ratelimit-remaining: 84<br>x-ratelimit-reset: 4<br>x-request-id: 474f142e-e5b3-4f88-9968-cd12ca792080<br>x-runtime: 0.084349<br>x-xss-protection: 0<br>CF-Cache-Status: DYNAMIC<br>Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=KNrpK0D5aq1Z%2BblZMfyTb4MLWjVQT1y0%2FQXo1gH6O6Ydw01a69k7kdBlLKjsFh5cEbMPhbMW8oMDXxCAWDhUgbEjUu6jUu%2B1XiFwoSHRiB1S%2Fa%2F6KracMrG5sKmHPCc%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>Server: cloudflare<br>CF-RAY: 7877f2d70f2388a4-LHR<br>alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400</pre>
+                                <h5>Response Body</h5>
+                                    <pre>
+                                        [<br>    {<br>        &quot;field&quot;: &quot;status&quot;,<br>        &quot;message&quot;: &quot;can't be blank&quot;<br>    }<br>]
+                                    </pre>
+                                    <h5>Response Cookies</h5>
+                                    <pre></pre>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                </span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+                <tr class="test-FAILURE">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Failure</span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">FAILURE</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+                    <tr class="test-FAILURE">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="4" class="error-message-cell">
+                            <div class="error-message ellipsis"
+                                 title='Assertion error: 1 expectation failed.Expected status code &lt;201&gt; but was &lt;422&gt;.'>
+                                <pre>Assertion error: 1 expectation failed.Expected status code &lt;201&gt; but was &lt;422&gt;.</pre>
+                            </div>
+                <div><!-- Stack trace -->
+                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                            data-target="#stacktraceModal-17">
+                        View stack trace
+                    </button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="stacktraceModal-17" tabindex="-1" role="dialog"
+                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="stacktraceModalLabel">
+                                java.lang.AssertionError
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                    <h5>1 expectation failed.<br>Expected status code <201> but was <422>.<br></h5>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                        </td>
+                    </tr>
+
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        <a name="5"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection5')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection5 success-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection5')"
+                               style="display:block;">
+                            <span class="top-level-step">Data Driven test for creating multiple users </span>
+                            </a>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">0.79s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection5" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Creating User with Name :sami, email : sdbn52try@gmail.com, gender : male and status: active</span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">0.79s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">POST https://gorest.co.in/public/v2/users</span>
+
+                                <span class="rest-query">
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
+                            data-target="#restModal-20">
+                        REST Query
+                    </button>
+                </span>
+                <!-- Modal -->
+                <div class="modal fade" id="restModal-20" tabindex="-1" role="dialog"
+                     aria-labelledby="restModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="restModalLabel">
+                                POST https://gorest.co.in/public/v2/users
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                    <p>Status code: 201</p>
+                                    <p>Content Type: application/json</p>
+                                    <h5>Request Headers</h5>
+                                    <pre>Authorization=Bearer 3fd5c5d69049fe0983c50eccc57a83d284bd9dbcff3d769acd739294f73b86bb<br>Connection=keep-alive<br>Accept=*/*<br>Content-Type=application/json; charset=UTF-8</pre>
+                                    <h5>Content Body</h5>
+                                    <pre>{<br>    &quot;name&quot;: &quot;sami&quot;,<br>    &quot;gender&quot;: &quot;male&quot;,<br>    &quot;email&quot;: &quot;sdbn52try@gmail.com&quot;,<br>    &quot;status&quot;: &quot;active&quot;<br>}</pre>
+                                    <h5>Request Cookies</h5>
+                                    <pre></pre>
+                                    <h5>Response Headers</h5>
+                                    <pre>Date: Tue, 10 Jan 2023 19:51:40 GMT<br>Content-Type: application/json; charset=utf-8<br>Transfer-Encoding: chunked<br>Connection: keep-alive<br>Cache-Control: max-age=0, private, must-revalidate<br>etag: W/&quot;4bb866815f16c7704c2c0048062e910f&quot;<br>location: https://gorest.co.in/public/v2/users/42234<br>referrer-policy: strict-origin-when-cross-origin<br>vary: Origin<br>x-content-type-options: nosniff<br>x-download-options: noopen<br>x-frame-options: SAMEORIGIN<br>x-permitted-cross-domain-policies: none<br>x-ratelimit-limit: 90<br>x-ratelimit-remaining: 84<br>x-ratelimit-reset: 4<br>x-request-id: 88cbae0f-5072-49c0-ae77-437112dfe596<br>x-runtime: 0.121326<br>x-xss-protection: 0<br>CF-Cache-Status: DYNAMIC<br>Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=DC84XH2YLfYIsqP8zmMPykcrs9DejtULNbWmeuk0pBnmJH%2Ft2fRyToelpKE%2BX9AuDqCFXW80mDVIlOKVexeaSp9WcvcfKlJKFnZHnASbr2P6lTx4UyBI49mhV37Kxh4%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>Server: cloudflare<br>CF-RAY: 7877f2dbd88775bd-LHR<br>alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400</pre>
+                                <h5>Response Body</h5>
+                                    <pre>
+                                        {<br>    &quot;id&quot;: 42234,<br>    &quot;name&quot;: &quot;sami&quot;,<br>    &quot;email&quot;: &quot;sdbn52try@gmail.com&quot;,<br>    &quot;gender&quot;: &quot;male&quot;,<br>    &quot;status&quot;: &quot;active&quot;<br>}
+                                    </pre>
+                                    <h5>Response Cookies</h5>
+                                    <pre></pre>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                </span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        <a name="6"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection6')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection6 success-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection6')"
+                               style="display:block;">
+                            <span class="top-level-step">Data Driven test for creating multiple users </span>
+                            </a>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">0.76s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection6" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Creating User with Name :samj, email : sdbn57try@gmail.com, gender : female and status: active</span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">0.76s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">POST https://gorest.co.in/public/v2/users</span>
+
+                                <span class="rest-query">
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
+                            data-target="#restModal-23">
+                        REST Query
+                    </button>
+                </span>
+                <!-- Modal -->
+                <div class="modal fade" id="restModal-23" tabindex="-1" role="dialog"
+                     aria-labelledby="restModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="restModalLabel">
+                                POST https://gorest.co.in/public/v2/users
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                    <p>Status code: 201</p>
+                                    <p>Content Type: application/json</p>
+                                    <h5>Request Headers</h5>
+                                    <pre>Authorization=Bearer 3fd5c5d69049fe0983c50eccc57a83d284bd9dbcff3d769acd739294f73b86bb<br>Connection=keep-alive<br>Accept=*/*<br>Content-Type=application/json; charset=UTF-8</pre>
+                                    <h5>Content Body</h5>
+                                    <pre>{<br>    &quot;name&quot;: &quot;samj&quot;,<br>    &quot;gender&quot;: &quot;female&quot;,<br>    &quot;email&quot;: &quot;sdbn57try@gmail.com&quot;,<br>    &quot;status&quot;: &quot;active&quot;<br>}</pre>
+                                    <h5>Request Cookies</h5>
+                                    <pre></pre>
+                                    <h5>Response Headers</h5>
+                                    <pre>Date: Tue, 10 Jan 2023 19:51:41 GMT<br>Content-Type: application/json; charset=utf-8<br>Transfer-Encoding: chunked<br>Connection: keep-alive<br>Cache-Control: max-age=0, private, must-revalidate<br>etag: W/&quot;39198cde8b52663ae79d387a328264f1&quot;<br>location: https://gorest.co.in/public/v2/users/42235<br>referrer-policy: strict-origin-when-cross-origin<br>vary: Origin<br>x-content-type-options: nosniff<br>x-download-options: noopen<br>x-frame-options: SAMEORIGIN<br>x-permitted-cross-domain-policies: none<br>x-ratelimit-limit: 90<br>x-ratelimit-remaining: 84<br>x-ratelimit-reset: 4<br>x-request-id: 063c5ce6-9000-4f98-a959-b7614e9340a5<br>x-runtime: 0.110632<br>x-xss-protection: 0<br>CF-Cache-Status: DYNAMIC<br>Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2B76AJKRxQW%2BVGUNPQ%2BBUodr29dzwsn7uW7wkJZTfnqJyIIRxg6jz%2B%2FNOeVSgGKxsaInfXSZehnMUCMz2GxE5s8VzfJq%2FCQHHz0rjSUIRzMDqkbnJW94%2Fl6KVMtSaDI4%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>Server: cloudflare<br>CF-RAY: 7877f2e0dc33dccf-LHR<br>alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400</pre>
+                                <h5>Response Body</h5>
+                                    <pre>
+                                        {<br>    &quot;id&quot;: 42235,<br>    &quot;name&quot;: &quot;samj&quot;,<br>    &quot;email&quot;: &quot;sdbn57try@gmail.com&quot;,<br>    &quot;gender&quot;: &quot;female&quot;,<br>    &quot;status&quot;: &quot;active&quot;<br>}
+                                    </pre>
+                                    <h5>Response Cookies</h5>
+                                    <pre></pre>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                </span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        <a name="7"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection7')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection7 success-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection7')"
+                               style="display:block;">
+                            <span class="top-level-step">Data Driven test for creating multiple users </span>
+                            </a>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">0.83s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection7" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Creating User with Name :samk, email : sdbn50try@gmail.com, gender : female and status: active</span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">0.83s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">POST https://gorest.co.in/public/v2/users</span>
+
+                                <span class="rest-query">
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
+                            data-target="#restModal-26">
+                        REST Query
+                    </button>
+                </span>
+                <!-- Modal -->
+                <div class="modal fade" id="restModal-26" tabindex="-1" role="dialog"
+                     aria-labelledby="restModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="restModalLabel">
+                                POST https://gorest.co.in/public/v2/users
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                    <p>Status code: 201</p>
+                                    <p>Content Type: application/json</p>
+                                    <h5>Request Headers</h5>
+                                    <pre>Authorization=Bearer 3fd5c5d69049fe0983c50eccc57a83d284bd9dbcff3d769acd739294f73b86bb<br>Connection=keep-alive<br>Accept=*/*<br>Content-Type=application/json; charset=UTF-8</pre>
+                                    <h5>Content Body</h5>
+                                    <pre>{<br>    &quot;name&quot;: &quot;samk&quot;,<br>    &quot;gender&quot;: &quot;female&quot;,<br>    &quot;email&quot;: &quot;sdbn50try@gmail.com&quot;,<br>    &quot;status&quot;: &quot;active&quot;<br>}</pre>
+                                    <h5>Request Cookies</h5>
+                                    <pre></pre>
+                                    <h5>Response Headers</h5>
+                                    <pre>Date: Tue, 10 Jan 2023 19:51:42 GMT<br>Content-Type: application/json; charset=utf-8<br>Transfer-Encoding: chunked<br>Connection: keep-alive<br>Cache-Control: max-age=0, private, must-revalidate<br>etag: W/&quot;0141516b079a9d294a32bb7c9d7455e7&quot;<br>location: https://gorest.co.in/public/v2/users/42236<br>referrer-policy: strict-origin-when-cross-origin<br>vary: Origin<br>x-content-type-options: nosniff<br>x-download-options: noopen<br>x-frame-options: SAMEORIGIN<br>x-permitted-cross-domain-policies: none<br>x-ratelimit-limit: 90<br>x-ratelimit-remaining: 84<br>x-ratelimit-reset: 4<br>x-request-id: d86e6e84-672e-4fb1-ae45-4ea18fc9e68a<br>x-runtime: 0.126888<br>x-xss-protection: 0<br>CF-Cache-Status: DYNAMIC<br>Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=vuWSPUjlko3%2B8BGfxHJ3NGTC579mvwf0vRbAIKOSO9kx5%2BC7%2B2vQPO9URH0XKBEAKksy9ajNpKBrFXwfhnz0bLGD4noNHXmE8ttfWRu9IiJIYR%2BuT7kbNUBlgvYtBNI%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>Server: cloudflare<br>CF-RAY: 7877f2e5aebebc97-LHR<br>alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400</pre>
+                                <h5>Response Body</h5>
+                                    <pre>
+                                        {<br>    &quot;id&quot;: 42236,<br>    &quot;name&quot;: &quot;samk&quot;,<br>    &quot;email&quot;: &quot;sdbn50try@gmail.com&quot;,<br>    &quot;gender&quot;: &quot;female&quot;,<br>    &quot;status&quot;: &quot;active&quot;<br>}
+                                    </pre>
+                                    <h5>Response Cookies</h5>
+                                    <pre></pre>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                </span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-FAILURE">
+                    <td colspan="2"></td>
+                    <td width="100"><span class="top-level-step"><em>FAILURE</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>5.44s</em></span></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <div id="beforefooter"></div>
+    <div id="bottomfooter">
+        <span class="version">Serenity BDD version 1.5.1</span>
+    </div>
+
+
+    <script type="text/javascript">
+        function toggleDiv(divId) {
+            $("#" + divId).toggle();
+            var imgsrc = $(".img" + divId).attr('src');
+            if (imgsrc == 'images/plus.png') {
+                $(".img" + divId).attr("src", function () {
+                    return "images/minus.png";
+                });
+
+            }
+            else {
+                $(".img" + divId).attr("src", function () {
+                    return "images/plus.png";
+                });
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        $('.example-table table').DataTable({
+            "order": [[0, "asc"]],
+            "pageLength": 25,
+            "scrollX": "100%",
+            "scrollXInner": "100%",
+            "scrollCollapse": true
+        });
+    </script>
+
+    <script type="text/javascript">
+        //<![CDATA[
+
+        $(document).ready(function () {
+            $('img.screenshot').imgPreview({
+                imgCSS: {
+                    width: '500px'
+                },
+                distanceFromCursor: {top: 10, left: -200}
+            });
+        });
+
+        //]]>
+    </script>
+    <div id="imgPreviewContainer" style="position: absolute; top: 612px; left: 355px; display: none; " class=""><img
+            src="" style="display: none; "></div>
+    <div id="imgPreviewContainer2" style="position: absolute; top: 925px; left: 320px; display: none; " class="">
+        <img style="width: 200px; display: none; " src=""></div>
+    <div id="imgPreviewWithStyles" style="position: absolute; top: 1272px; left: 321px; display: none; " class="">
+        <img style="height: 200px; opacity: 1; display: none; " src=""></div>
+    <div id="imgPreviewWithStyles2" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+    <div id="imgPreviewWithStyles3" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+
+</body>
+</html>
